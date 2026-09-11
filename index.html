@@ -1,0 +1,2470 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)file:///Users/ad/Downloads/index_6.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Western Cape Caravan Parks — The Complete Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --sand: #fffbf5;
+    --earth: #ff7043;
+    --deep: #1565c0;
+    --forest: #0288d1;
+    --sage: #26a69a;
+    --sky: #b3e5fc;
+    --ocean: #0277bd;
+    --text: #1a237e;
+    --muted: #5c6bc0;
+    --card-bg: #ffffff;
+    --border: #e3f2fd;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f0f7ff;
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #0d3b7a 0%, #01579b 50%, #00695c 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(255,255,255,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(255,235,59,0.15) 0%, transparent 50%),
+      radial-gradient(ellipse at 60% 80%, rgba(255,112,67,0.15) 0%, transparent 50%);
+  }
+  .hero-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(255,255,255,0.04) 40px,
+      rgba(255,255,255,0.04) 41px
+    );
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 40px 80px;
+  }
+  .hero-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.35);
+    color: #fff9c4;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 40px;
+    margin-bottom: 28px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.6rem, 6vw, 5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    max-width: 700px;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: #fff176;
+  }
+  .hero-sub {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.9);
+    max-width: 560px;
+    margin-bottom: 48px;
+    font-weight: 300;
+  }
+  .hero-stats {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+  .hero-stat {
+    border-left: 2px solid #fff176;
+    padding-left: 16px;
+  }
+  .hero-stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    display: block;
+    line-height: 1;
+  }
+  .hero-stat-label {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.75);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 4px;
+    display: block;
+  }
+
+  /* ── NAV ── */
+  .sticky-nav {
+    background: #0d3b7a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-inner::-webkit-scrollbar { display: none; }
+  .nav-btn {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.55);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    padding: 14px 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  .nav-home-btn {
+    color: #fff176 !important;
+    font-size: 0.88rem;
+    border-right: 1px solid rgba(255,255,255,0.15);
+    padding-right: 20px;
+    margin-right: 4px;
+  }
+  .nav-home-btn:hover { color: white !important; border-bottom-color: transparent !important; }
+  .nav-btn-pet.active { color: #a5d6a7 !important; border-bottom-color: #a5d6a7 !important; }
+  .nav-btn:hover, .nav-btn.active {
+    color: #fff176;
+    border-bottom-color: #fff176;
+  }
+
+  /* ── SEARCH BAR ── */
+  .search-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 40px 32px;
+  }
+  .search-wrap {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .search-box {
+    flex: 1;
+    min-width: 260px;
+    position: relative;
+  }
+  .search-box svg {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+  }
+  .search-box input {
+    width: 100%;
+    padding: 14px 16px 14px 48px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    background: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-box input::placeholder { color: var(--muted); }
+  .search-box input:focus { border-color: #0288d1; }
+  .filter-select {
+    padding: 14px 20px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    background: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text);
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7c6d' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+  }
+  .result-count {
+    font-size: 0.88rem;
+    color: var(--muted);
+    padding: 8px 0;
+  }
+  .result-count span { font-weight: 600; color: #0288d1; }
+
+  /* ── REGION SECTION ── */
+  .region-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px 80px;
+  }
+  .region-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .region-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1565c0;
+  }
+  .region-count {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--muted);
+    background: var(--border);
+    padding: 3px 10px;
+    border-radius: 20px;
+  }
+  .region-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ff7043;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  /* ── CARDS GRID ── */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 20px;
+  }
+
+  /* ── CARD ── */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(2,136,209,0.15);
+  }
+  .card-map-strip {
+    height: 6px;
+    background: linear-gradient(90deg, #26a69a, #42d0c8);
+  }
+  .card-map-strip.coast { background: linear-gradient(90deg, #0288d1, #40c4ff); }
+  .card-map-strip.karoo { background: linear-gradient(90deg, #ff8f00, #ffca28); }
+  .card-map-strip.wine { background: linear-gradient(90deg, #ad1457, #f06292); }
+  .card-map-strip.garden { background: linear-gradient(90deg, #2e7d32, #66bb6a); }
+  .card-body {
+    padding: 20px 22px 18px;
+  }
+  .card-region-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .card-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1565c0;
+    margin-bottom: 4px;
+    line-height: 1.25;
+  }
+  .card-location {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .card-location svg { flex-shrink: 0; }
+  .card-desc {
+    font-size: 0.88rem;
+    color: #546e7a;
+    line-height: 1.55;
+    margin-bottom: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-desc.expanded {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    margin-bottom: 4px;
+  }
+  .read-more-btn {
+    background: none;
+    border: none;
+    color: #0288d1;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 2px 0 12px 0;
+    display: block;
+    letter-spacing: 0.01em;
+  }
+  .read-more-btn:hover { color: #01579b; text-decoration: underline; }
+  /* ── PET BADGES ── */
+  .pet-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+  }
+  .pet-yes {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1.5px solid #a5d6a7;
+  }
+  .pet-no {
+    background: #fce4ec;
+    color: #c62828;
+    border: 1.5px solid #ef9a9a;
+  }
+  .pet-unknown {
+    background: #fff8e1;
+    color: #e65100;
+    border: 1.5px solid #ffe082;
+  }
+
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .card-tag {
+    font-size: 0.72rem;
+    font-weight: 500;
+    background: #e1f5fe;
+    color: #0277bd;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid #b3e5fc;
+  }
+  .card-divider {
+    height: 1px;
+    background: var(--border);
+    margin-bottom: 14px;
+  }
+  .card-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .contact-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    color: var(--text);
+  }
+  .contact-row svg { color: #26a69a; flex-shrink: 0; }
+  .contact-row a {
+    color: #0277bd;
+    text-decoration: none;
+    word-break: break-all;
+  }
+  .contact-row a:hover { text-decoration: underline; }
+  .contact-row span a {
+    color: #0277bd;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .contact-row span a:hover { text-decoration: underline; }
+  .card-footer {
+    padding: 12px 22px;
+    background: #f0f7ff;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .card-gps {
+    font-family: monospace;
+    font-size: 0.72rem;
+    color: var(--muted);
+    background: var(--border);
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  .card-map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #0277bd;
+    text-decoration: none;
+    padding: 5px 12px;
+    border: 1px solid #81d4fa;
+    border-radius: 20px;
+    white-space: nowrap;
+    transition: background 0.15s;
+  }
+  .card-map-link:hover { background: #b3e5fc; color: #01579b; }
+
+  /* ── NO RESULTS ── */
+  .no-results {
+    text-align: center;
+    padding: 80px 40px;
+    color: var(--muted);
+    display: none;
+  }
+  .no-results.visible { display: block; }
+  .no-results h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: var(--deep);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: linear-gradient(135deg, #0d3b7a, #01579b);
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 48px 40px;
+    font-size: 0.85rem;
+  }
+  footer strong { color: #fff176; }
+  footer p { margin-bottom: 8px; }
+
+  /* ── HIDDEN ── */
+  .park-entry { }
+  .park-entry.hidden { display: none; }
+  .region-block.hidden { display: none; }
+
+  @media (max-width: 640px) {
+    .hero-inner { padding: 70px 24px 60px; }
+    .search-section, .region-section { padding-left: 24px; padding-right: 24px; }
+    .hero-stats { gap: 28px; }
+    .cards-grid { grid-template-columns: 1fr; }
+    .nav-inner { padding: 0 16px; }
+  }
+
+  /* ── HERO PET BUTTON ── */
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .hero-pet-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 32px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    box-shadow: 0 4px 20px rgba(46,125,50,0.5);
+    transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+    text-decoration: none;
+  }
+  .hero-pet-btn:hover {
+    background: #1b5e20;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(46,125,50,0.6);
+  }
+  .hero-pet-btn:active { transform: translateY(0); }
+  .hero-pet-btn .paw-icon {
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+  .hero-pet-btn .btn-text { line-height: 1.2; }
+  .hero-pet-btn .btn-sub {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 400;
+    opacity: 0.85;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .hero-pet-btn.active-filter {
+    background: #1b5e20;
+    box-shadow: 0 0 0 3px #a5d6a7, 0 8px 28px rgba(46,125,50,0.5);
+  }
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">✦ South Africa's Most Complete Guide</div>
+    <h1>Western Cape<br><em>Caravan Parks</em></h1>
+    <p class="hero-sub">From the wild Atlantic West Coast to the Garden Route's lagoons — every caravan park, every contact, every GPS coordinate in one place.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num">37+</span>
+        <span class="hero-stat-label">Parks Listed</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">13</span>
+        <span class="hero-stat-label">Regions</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">GPS</span>
+        <span class="hero-stat-label">Coordinates</span>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <button class="hero-pet-btn" id="heroPetBtn" onclick="activatePetFilter()">
+        <span class="paw-icon">🐾</span>
+        <span class="btn-text">
+          Pets Welcome
+          <span class="btn-sub">15 parks · tap to view all</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- STICKY NAV -->
+<nav class="sticky-nav" id="mainNav">
+  <div class="nav-inner">
+    <button class="nav-btn nav-home-btn" onclick="window.scrollTo({top:0,behavior:&#39;smooth&#39;})">⌂ Home</button>
+    <button class="nav-btn active" onclick="filterRegion(&#39;all&#39;, this)">All Regions</button>
+    <button class="nav-btn" onclick="filterRegion(&#39;cape-peninsula&#39;, this)">Cape Peninsula</button>
+    <button class="nav-btn" onclick="filterRegion(&#39;west-coast&#39;, this)">West Coast</button>
+    <button class="nav-btn" onclick="filterRegion(&#39;paternoster&#39;, this)">Paternoster</button>
+    <button class="nav-btn" onclick="filterRegion(&#39;winelands&#39;, this)">Winelands</button>
+    <button class="nav-btn" onclick="filterRegion(&#39;overberg&#39;, this)">Overberg</button>
+    <button class="nav-btn" onclick="filterRegion(&#39;overberg-ext&#39;, this)">Hermanus &amp; Gansbaai</button>
+    <button class="nav-btn" onclick="filterRegion(&#39;breede&#39;, this)">Breede Valley</button>
+    <button class="nav-btn" onclick="filterRegion(&#39;karoo&#39;, this)">Karoo</button>
+    <button class="nav-btn" onclick="filterRegion(&#39;garden-route&#39;, this)">Garden Route</button>
+    <button class="nav-btn" onclick="filterRegion(&#39;sedgefield&#39;, this)">Sedgefield</button>
+    <button class="nav-btn" onclick="filterRegion(&#39;stillbay&#39;, this)">Still Bay</button>
+    <button class="nav-btn" onclick="filterRegion(&#39;hartenbos&#39;, this)">Hartenbos</button>
+    <button class="nav-btn" onclick="filterRegion(&#39;cederberg&#39;, this)">Cederberg</button>
+    <button class="nav-btn nav-btn-pet" onclick="filterPets(this)" id="petFilterBtn">🐾 Pets Welcome</button>
+  </div>
+</nav>
+
+<!-- SEARCH -->
+<div class="search-section">
+  <div class="search-wrap">
+    <div class="search-box">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+      <input type="text" id="searchInput" placeholder="Search parks, towns, activities…" oninput="searchParks()">
+    </div>
+    <select class="filter-select" id="regionFilter" onchange="filterByDropdown()">
+      <option value="all">All Regions</option>
+      <option value="cape-peninsula">Cape Peninsula</option>
+      <option value="west-coast">West Coast</option>
+      <option value="paternoster">Paternoster</option>
+      <option value="winelands">Winelands</option>
+      <option value="overberg">Overberg</option>
+      <option value="overberg-ext">Hermanus &amp; Gansbaai</option>
+      <option value="breede">Breede Valley</option>
+      <option value="karoo">Karoo</option>
+      <option value="garden-route">Garden Route</option>
+      <option value="sedgefield">Sedgefield</option>
+      <option value="stillbay">Still Bay</option>
+      <option value="hartenbos">Hartenbos</option>
+      <option value="cederberg">Cederberg</option>
+    </select>
+  </div>
+  <p class="result-count" id="resultCount"><span id="countNum">35</span> parks found</p>
+</div>
+
+<!-- MAIN CONTENT -->
+<main>
+
+  <!-- ═══════════════════════════════════════
+       CAPE PENINSULA
+  ═══════════════════════════════════════ -->
+  <section class="region-section region-block" id="sec-cape-peninsula" data-region="cape-peninsula">
+    <div class="region-header">
+      <div class="region-dot"></div>
+      <h2 class="region-title">Cape Peninsula</h2>
+      <span class="region-count">3 parks</span>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Imhoff -->
+      <article class="card park-entry" data-region="cape-peninsula" data-name="Imhoff Caravan Park" data-town="Kommetjie" data-tags="beach surfing fynbos fishing atlantic">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-no">🐾 No Pets Allowed</span>
+          <span class="card-region-tag">Cape Peninsula</span>
+          <h3 class="card-name">Imhoff Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            66 Wireless Road, Kommetjie, Cape Peninsula
+          </p>
+          <p class="card-desc">A beloved 3-star resort on the Atlantic seaboard in the historic village of Kommetjie, just 150m from Long Beach. Grassed, electrified stands surrounded by trees and fynbos, with clear views of Chapman's Peak. Features chalets, games room, kids playground and secure access control.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Beach 150m</span>
+            <span class="card-tag">Surfing</span>
+            <span class="card-tag">Fishing</span>
+            <span class="card-tag">Fynbos</span>
+            <span class="card-tag">Electrified</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27217831634">+27 21 783 1634</a> &nbsp;|&nbsp; <a href="tel:+27824910689">+27 82 491 0689</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:anderson@icon.co.za">anderson@icon.co.za</a>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="http://www.imhoff.co.za/" target="_blank">www.imhoff.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.1330, 18.3367</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.1330,18.3367" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Ou Skip -->
+      <article class="card park-entry" data-region="cape-peninsula" data-name="Ou Skip Holiday Resort" data-town="Melkbosstrand" data-tags="beach atlantic west coast cape town family 3 star">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-no">🐾 No Pets Allowed</span>
+          <span class="card-region-tag">Cape Peninsula</span>
+          <h3 class="card-name">Ou Skip Holiday Resort</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            1 Ou Skip Road, Melkbosstrand — 30km from Cape Town
+          </p>
+          <p class="card-desc">A 3-star SA Grading Council resort and one of the largest caravan parks in the Western Cape. Situated directly adjacent to the Atlantic Ocean — cross a road and you're on the beach. Views of Table Mountain. Ideal family getaway with strong community atmosphere.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Beach Access</span>
+            <span class="card-tag">3-Star</span>
+            <span class="card-tag">Kite Surfing</span>
+            <span class="card-tag">Family</span>
+            <span class="card-tag">Table Mountain View</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27215532058">+27 21 553 2058</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:reservations@ouskip.co.za">reservations@ouskip.co.za</a>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="http://www.ouskip.co.za/" target="_blank">www.ouskip.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−33.7128, 18.4469</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-33.7128,18.4469" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Chapmans Peak -->
+      <article class="card park-entry" data-region="cape-peninsula" data-name="Chapman&#39;s Peak Cottages &amp; Caravan Park" data-town="Noordhoek" data-tags="mountains farm animals fynbos atlantic family noordhoek">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Cape Peninsula</span>
+          <h3 class="card-name">Chapman's Peak Cottages &amp; Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Main Road, Noordhoek — 40km from Cape Town
+          </p>
+          <p class="card-desc">A relaxed, family enterprise on a 12-acre property at the foot of Chapman's Peak. Tree-lined campsites with a rustic farm feel — ducks, geese, dogs and cats roam freely. 46 grassed caravan/camping sites, 2 cottages, kids playground, splash pool and laundry. Adjacent to the Peninsula Sandstone Fynbos.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Farm Atmosphere</span>
+            <span class="card-tag">Fynbos</span>
+            <span class="card-tag">Horses Nearby</span>
+            <span class="card-tag">Family</span>
+            <span class="card-tag">Cottages</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span>Enquire via listing sites</span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>On M6 between Fish Hoek &amp; Noordhoek</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.0976, 18.3759</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.0976,18.3759" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       WEST COAST
+  ═══════════════════════════════════════ -->
+  <section class="region-section region-block" id="sec-west-coast" data-region="west-coast">
+    <div class="region-header">
+      <div class="region-dot"></div>
+      <h2 class="region-title">West Coast</h2>
+      <span class="region-count">5 parks</span>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Leentjiesklip -->
+      <article class="card park-entry" data-region="west-coast" data-name="Leentjiesklip Holiday Resort" data-town="Langebaan" data-tags="lagoon langebaan kitesurfing windsurfing sunsets west coast municipal">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-unknown">🐾 Confirm With Park</span>
+          <span class="card-region-tag">West Coast</span>
+          <h3 class="card-name">Leentjiesklip Holiday Resort</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Jon Olafsson Road, Langebaan — 120km from Cape Town
+          </p>
+          <p class="card-desc">One of the West Coast's most popular resorts, overlooking the world-famous Langebaan Lagoon with arguably the most beautiful sunsets in South Africa. 147 grassed stands (24 with private ablutions), excellent security. Superb for windsurfing, kitesurfing, swimming and spring wildflowers.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Lagoon Views</span>
+            <span class="card-tag">Kitesurfing</span>
+            <span class="card-tag">Windsurfing</span>
+            <span class="card-tag">Spring Flowers</span>
+            <span class="card-tag">Municipal</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27227722461">+27 22 772 2461</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:lise.geldenhuys@sbm.gov.za">lise.geldenhuys@sbm.gov.za</a>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://sbm.gov.za/leentjiesklip-resort" target="_blank">sbm.gov.za/leentjiesklip-resort</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−33.0661, 18.0418</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-33.0661,18.0418" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Vensterklip -->
+      <article class="card park-entry" data-region="west-coast" data-name="Vensterklip Caravan Park" data-town="Elands Bay" data-tags="surf rock art heritage elands bay crayfish wild west coast">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">West Coast</span>
+          <h3 class="card-name">Vensterklip Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            R366, near Elands Bay — 220km from Cape Town
+          </p>
+          <p class="card-desc">On the edge of a UNESCO World Heritage Site next to the Verlorenvlei wetland, 5km from the famous 6-star Elands Bay left-hand surf break. Rich in San rock art and cave dwellings. One of the wildest and most beautiful coastal settings in the Western Cape — sunsets and crayfish are legendary.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">World Heritage</span>
+            <span class="card-tag">Surfing</span>
+            <span class="card-tag">Rock Art</span>
+            <span class="card-tag">Birdwatching</span>
+            <span class="card-tag">Crayfish</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27795003335">+27 79 500 3335</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>R366 to Elands Bay direction</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−32.3012, 18.3456</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-32.3012,18.3456" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Stywelyne Beach Resort -->
+      <article class="card park-entry" data-region="west-coast" data-name="Stywelyne Beach Resort" data-town="Velddrif" data-tags="berg river velddrif laaiplek fishing bird watching west coast municipal">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-unknown">🐾 Confirm With Park</span>
+          <span class="card-region-tag">West Coast</span>
+          <h3 class="card-name">Stywelyne Beach Resort</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            1 Garnaal Street, Laaiplek, Velddrif
+          </p>
+          <p class="card-desc">Municipal resort at the mouth of the Berg River on the West Coast, near the world-famous bokkoms (dried fish) of Velddrif. 74 electrified caravan and camping stands, self-catering chalets, two swimming pools and a children's playground. Excellent for angling, crayfish diving and birdwatching along the estuary.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Berg River</span>
+            <span class="card-tag">Fishing</span>
+            <span class="card-tag">Birdwatching</span>
+            <span class="card-tag">Chalets</span>
+            <span class="card-tag">Swimming Pools</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27227830408">+27 22 783 0408</a> &nbsp;|&nbsp; <a href="tel:+27832723852">+27 83 272 3852</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:stywelyne@bergmun.org.za">stywelyne@bergmun.org.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−32.7665, 18.1510</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-32.7665,18.1510" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- West Coast National Park -->
+      <article class="card park-entry" data-region="west-coast" data-name="West Coast National Park" data-town="Langebaan" data-tags="national park langebaan flowers spring west coast wildlife">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-no">🐾 No Pets (National Park)</span>
+          <span class="card-region-tag">West Coast</span>
+          <h3 class="card-name">West Coast National Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Langebaan, West Coast — 120km from Cape Town
+          </p>
+          <p class="card-desc">SANParks camping along the world-renowned Langebaan Lagoon. Famous for spectacular spring wildflower displays (Aug–Oct), diverse birdlife and a pristine Atlantic coastline. Campsites are well equipped with electricity, ablutions and braai facilities inside the national park boundary.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">SANParks</span>
+            <span class="card-tag">Wildflowers</span>
+            <span class="card-tag">Birdlife</span>
+            <span class="card-tag">Lagoon</span>
+            <span class="card-tag">Watersports</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27227722144">+27 22 772 2144</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://www.sanparks.org/parks/west_coast" target="_blank">sanparks.org/parks/west_coast</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−33.2453, 18.0654</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-33.2453,18.0654" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Kogel Bay -->
+      <article class="card park-entry" data-region="overberg" data-name="Kogel Bay Resort" data-town="Gordon&#39;s Bay" data-tags="clarence drive gordons bay kogelberg biosphere whale watching fynbos beach">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-unknown">🐾 Confirm With Park</span>
+          <span class="card-region-tag">Overberg / Helderberg</span>
+          <h3 class="card-name">Kogel Bay Resort</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Clarence Drive, between Gordon's Bay &amp; Rooi Els
+          </p>
+          <p class="card-desc">One of the most dramatically situated campsites in South Africa, set inside the Kogel Berg Biosphere Reserve. A 4km sandy beach sheltered by high fynbos-covered mountains — the south-easter doesn't reach here. Managed by the City of Cape Town. Non-electrified sites. Whale watching in season.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Biosphere Reserve</span>
+            <span class="card-tag">Whale Watching</span>
+            <span class="card-tag">4km Beach</span>
+            <span class="card-tag">Fynbos</span>
+            <span class="card-tag">City of CT</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27218141042">+27 21 814 1042</a> &nbsp;|&nbsp; <a href="tel:+27218141043">+27 21 814 1043</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:resort.bookings@capetown.gov.za">resort.bookings@capetown.gov.za</a>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://www.capetown.gov.za/" target="_blank">capetown.gov.za (Resorts)</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.1855, 18.8532</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.1855,18.8532" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CAPE WINELANDS
+  ═══════════════════════════════════════ -->
+  <section class="region-section region-block" id="sec-winelands" data-region="winelands">
+    <div class="region-header">
+      <div class="region-dot"></div>
+      <h2 class="region-title">Cape Winelands</h2>
+      <span class="region-count">2 parks</span>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Mountain Breeze -->
+      <article class="card park-entry" data-region="winelands" data-name="Mountain Breeze Caravan Park" data-town="Stellenbosch" data-tags="stellenbosch winelands mountain hiking wine routes beach access">
+        <div class="card-map-strip wine"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-unknown">🐾 Confirm With Park</span>
+          <span class="card-region-tag">Cape Winelands</span>
+          <h3 class="card-name">Mountain Breeze Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Near Stellenbosch, Cape Winelands
+          </p>
+          <p class="card-desc">Centrally positioned in the Cape Winelands with quick access to Stellenbosch, Cape Town and Franschhoek. An ideal base for wine routes, mountain and hiking trails, nearby beaches and local markets. A relaxed park surrounded by vineyards and mountain scenery.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Wine Routes</span>
+            <span class="card-tag">Hiking</span>
+            <span class="card-tag">Mountains</span>
+            <span class="card-tag">Close to CT</span>
+            <span class="card-tag">Markets</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Near Stellenbosch — enquire locally</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−33.9328, 18.8601</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-33.9328,18.8601" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Slanghoek -->
+      <article class="card park-entry" data-region="winelands" data-name="Slanghoek Mountain Resort" data-town="Rawsonville" data-tags="slanghoek rawsonville mountains winelands hot tubs wine farming">
+        <div class="card-map-strip wine"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Cape Winelands</span>
+          <h3 class="card-name">Slanghoek Mountain Resort</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            R45, Rawsonville, Breede River Wine Valley
+          </p>
+          <p class="card-desc">Front-row seats to the Winelands' most dramatic mountain scenery in the Slanghoek Valley. A well-kept resort with optional private hot tubs at select sites — a special treat after wine tasting along the R45. Perfect harvest-season base for vineyards, scenic drives and walking trails.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Mountain Views</span>
+            <span class="card-tag">Hot Tubs</span>
+            <span class="card-tag">Wine Tasting</span>
+            <span class="card-tag">Scenic Drives</span>
+            <span class="card-tag">Walking Trails</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27233443031">+27 23 344 3031</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="http://www.slanghoek.co.za/" target="_blank">www.slanghoek.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−33.6652, 19.3004</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-33.6652,19.3004" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       BREEDE RIVER VALLEY
+  ═══════════════════════════════════════ -->
+  <section class="region-section region-block" id="sec-breede" data-region="breede">
+    <div class="region-header">
+      <div class="region-dot"></div>
+      <h2 class="region-title">Breede River Valley</h2>
+      <span class="region-count">2 parks</span>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Silwerstrand -->
+      <article class="card park-entry" data-region="breede" data-name="Silwerstrand Caravan Park" data-town="Robertson" data-tags="robertson breede river boating fishing wine skiing langeberg mountains">
+        <div class="card-map-strip wine"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Breede River Valley</span>
+          <h3 class="card-name">Silwerstrand Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            R60 Road, Robertson — 5km from town, 130km from Cape Town
+          </p>
+          <p class="card-desc">Privately owned family resort on the banks of the Breede River with sweeping Langeberg Mountain views. Campers return year after year for the superb watersports — canoeing, boating, water skiing and fishing. Electrified grassed sites, swimming pool with super-tube, kids playground. Sister park to Montagu Caravan Park.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Breede River</span>
+            <span class="card-tag">Water Skiing</span>
+            <span class="card-tag">Boating</span>
+            <span class="card-tag">Fishing</span>
+            <span class="card-tag">Wine Country</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27761994085">+27 76 199 4085</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:bookings@silwerstrandcaravanpark.co.za">bookings@silwerstrandcaravanpark.co.za</a>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="http://www.silwerstrandcaravanpark.co.za/" target="_blank">www.silwerstrandcaravanpark.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−33.8113, 19.8540</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-33.8113,19.8540" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Montagu -->
+      <article class="card park-entry" data-region="breede" data-name="Montagu Caravan Park" data-town="Montagu" data-tags="montagu route 62 hot springs apricot winelands mountains oudtshoorn">
+        <div class="card-map-strip wine"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Breede River Valley</span>
+          <h3 class="card-name">Montagu Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            4 Middel Street, Montagu — 160km from Cape Town on Route 62
+          </p>
+          <p class="card-desc">Set in an apricot orchard with panoramic views of the Cogmans Kloof Mountains. Midway between Cape Town and Oudtshoorn on the famous Route 62 — one of South Africa's great scenic drives. Features heated indoor pools, hot mineral springs nearby, padstalle, arts &amp; crafts and top wine cellars. 80 shaded grassed sites, chalets, wooden huts and backpackers.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Route 62</span>
+            <span class="card-tag">Hot Springs</span>
+            <span class="card-tag">Apricot Orchard</span>
+            <span class="card-tag">Heated Pool</span>
+            <span class="card-tag">Chalets</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:montagucp@gmail.com">montagucp@gmail.com</a>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://montagucaravanpark.co.za/" target="_blank">montagucaravanpark.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−33.7875, 20.1131</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-33.7875,20.1131" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       OVERBERG
+  ═══════════════════════════════════════ -->
+  <section class="region-section region-block" id="sec-overberg" data-region="overberg">
+    <div class="region-header">
+      <div class="region-dot"></div>
+      <h2 class="region-title">Overberg</h2>
+      <span class="region-count">2 parks</span>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Vloedbos -->
+      <article class="card park-entry" data-region="overberg" data-name="Vloedbos" data-town="Caledon" data-tags="caledon hermanus overberg river camping farm nature">
+        <div class="card-map-strip"></div>
+        <div class="card-body">
+          <span class="card-region-tag">Overberg</span>
+          <h3 class="card-name">Vloedbos Campsite</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Between Caledon &amp; Bredasdorp — 45km from Hermanus
+          </p>
+          <p class="card-desc">Nestled in the lush countryside of the Overberg, Vloedbos offers a serene farm-style camping experience surrounded by fynbos. Situated in an area rich with Overberg natural beauty, close to whale-watching territory and the Hermanus coastline.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Fynbos</span>
+            <span class="card-tag">Overberg</span>
+            <span class="card-tag">Near Hermanus</span>
+            <span class="card-tag">Farm Setting</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Between Caledon &amp; Bredasdorp</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.3200, 19.6500</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.3200,19.6500" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Die Dam -->
+      <article class="card park-entry" data-region="overberg" data-name="Die Dam Caravan Park" data-town="Quoin Point" data-tags="quoin point overberg coast nature reserve southern tip">
+        <div class="card-map-strip"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-unknown">🐾 Confirm With Park</span>
+          <span class="card-region-tag">Overberg</span>
+          <h3 class="card-name">Die Dam Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Near Quoin Point Nature Reserve, Overberg
+          </p>
+          <p class="card-desc">A remote coastal campsite that provides access to the Quoin Point Nature Reserve and some of the most unspoilt beaches in the Overberg. Excellent for fishing, beach walking and star-gazing in a quiet, off-the-beaten-track setting near the southern tip of Africa.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Nature Reserve</span>
+            <span class="card-tag">Remote</span>
+            <span class="card-tag">Fishing</span>
+            <span class="card-tag">Star Gazing</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Near Quoin Point — enquire locally</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.6500, 19.6200</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.6500,19.6200" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       KAROO
+  ═══════════════════════════════════════ -->
+  <section class="region-section region-block" id="sec-karoo" data-region="karoo">
+    <div class="region-header">
+      <div class="region-dot"></div>
+      <h2 class="region-title">Karoo</h2>
+      <span class="region-count">2 parks</span>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Karoo NP -->
+      <article class="card park-entry" data-region="karoo" data-name="Karoo National Park" data-town="Beaufort West" data-tags="karoo national park beaufort west n1 sanparks wildlife 4x4 hiking stars">
+        <div class="card-map-strip karoo"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-no">🐾 No Pets (National Park)</span>
+          <span class="card-region-tag">Karoo</span>
+          <h3 class="card-name">Karoo National Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            12km from Beaufort West, off the N1 Highway
+          </p>
+          <p class="card-desc">An award-winning campsite (24 sites) inside this expansive 750km² national park, facing the Nuweveld Mountains. Home to lion, black rhino, Cape mountain zebra, gemsbok and over 200 bird species. Award-winning facilities — hot ablutions, electricity, restaurant, shop, 4×4 trail and guided night drives. The definitive N1 stopover.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">SANParks</span>
+            <span class="card-tag">Big Game</span>
+            <span class="card-tag">4×4 Trail</span>
+            <span class="card-tag">Night Drives</span>
+            <span class="card-tag">Restaurant</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27234152828">+27 23 415 2828</a> &nbsp;/&nbsp; <a href="tel:+27234152829">2829</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:karooreservations@sanparks.org">karooreservations@sanparks.org</a>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://www.sanparks.org/parks/karoo" target="_blank">sanparks.org/parks/karoo</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−32.3295, 22.4926</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-32.3295,22.4926" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Oppi Dam -->
+      <article class="card park-entry" data-region="karoo" data-name="Oppi Dam" data-town="Oudtshoorn" data-tags="oudtshoorn karoo swartberg schoemanshoek dam camping">
+        <div class="card-map-strip karoo"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-unknown">🐾 Confirm With Park</span>
+          <span class="card-region-tag">Karoo</span>
+          <h3 class="card-name">Oppi Dam</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Schoemanshoek Valley, 14km from Oudtshoorn
+          </p>
+          <p class="card-desc">Dramatic setting at the foot of the majestic Swartberg Mountains in the picturesque Schoemanshoek Valley, en route to the world-famous Cango Caves. An intimate campsite for those wanting to explore Oudtshoorn's ostriches, caves and Karoo landscapes from a peaceful base.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Swartberg Mountains</span>
+            <span class="card-tag">Cango Caves Nearby</span>
+            <span class="card-tag">Ostriches</span>
+            <span class="card-tag">Karoo</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Schoemanshoek Valley, R328 direction Cango Caves</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−33.5580, 22.1850</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-33.5580,22.1850" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       GARDEN ROUTE
+  ═══════════════════════════════════════ -->
+  <section class="region-section region-block" id="sec-garden-route" data-region="garden-route">
+    <div class="region-header">
+      <div class="region-dot"></div>
+      <h2 class="region-title">Garden Route</h2>
+      <span class="region-count">8 parks</span>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Victoria Bay -->
+      <article class="card park-entry" data-region="garden-route" data-name="Victoria Bay Caravan Park" data-town="George" data-tags="victoria bay george surfing surf views ocean beach garden route">
+        <div class="card-map-strip garden"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-unknown">🐾 Confirm With Park</span>
+          <span class="card-region-tag">Garden Route</span>
+          <h3 class="card-name">Victoria Bay Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Victoria Bay, 10km from George
+          </p>
+          <p class="card-desc">Widely regarded as one of South Africa's best-positioned caravan parks — with stands perched directly above the ocean offering 180° bay views. Vic Bay is a legendary right-hand point break for surfers. 30 electrified stands across two terraces (Western has private ablutions), dolphins and whale sightings regular.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Ocean Views</span>
+            <span class="card-tag">Surfing</span>
+            <span class="card-tag">Dolphins</span>
+            <span class="card-tag">Private Ablutions</span>
+            <span class="card-tag">Fishing</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27448890081">+27 44 889 0081</a> &nbsp;|&nbsp; WhatsApp: <a href="https://wa.me/27835308143">083 530 8143</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://victoriabaycaravanpark.co.za/" target="_blank">victoriabaycaravanpark.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.0039, 22.5482</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.0039,22.5482" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Glentana -->
+      <article class="card park-entry" data-region="garden-route" data-name="Glentana Caravan Park" data-town="Glentana" data-tags="glentana mossel bay george beach surfing swimming garden route 100m beach">
+        <div class="card-map-strip garden"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Garden Route</span>
+          <h3 class="card-name">Glentana Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Glentana, between George &amp; Mossel Bay — 100m from beach
+          </p>
+          <p class="card-desc">Barely 100 metres from the beach between George and Mossel Bay. Glentana is a small, unpretentious coastal village offering crystal-clear swimming, excellent surfing, fishing and snorkelling. A favourite for summer family holidays with easy beach access and a relaxed Garden Route atmosphere.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">100m to Beach</span>
+            <span class="card-tag">Swimming</span>
+            <span class="card-tag">Snorkelling</span>
+            <span class="card-tag">Surfing</span>
+            <span class="card-tag">Family</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27448710009">+27 44 871 0009</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Off N2 at Glentana exit, between George &amp; Mossel Bay</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.0340, 22.3890</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.0340,22.3890" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Ebb & Flow / Wilderness NP -->
+      <article class="card park-entry" data-region="garden-route" data-name="Ebb &amp; Flow / Wilderness National Park" data-town="Wilderness" data-tags="wilderness sanparks touw river canoeing birding garden route lakes forests">
+        <div class="card-map-strip garden"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-no">🐾 No Pets (National Park)</span>
+          <span class="card-region-tag">Garden Route</span>
+          <h3 class="card-name">Ebb &amp; Flow / Wilderness National Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Touw River, Wilderness, Garden Route
+          </p>
+          <p class="card-desc">SANParks' Ebb &amp; Flow campsite on the banks of the Touw River, in the heart of South Africa's famous Garden Route — where lakes, rivers, estuaries and beaches meet lush forests. Superb canoeing, 280+ bird species and well-maintained facilities. A short drive to the famous "Map of Africa" viewpoint and Wilderness beach.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">SANParks</span>
+            <span class="card-tag">Canoeing</span>
+            <span class="card-tag">Birding</span>
+            <span class="card-tag">Rivers &amp; Lakes</span>
+            <span class="card-tag">Touw River</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27448771197">+27 44 877 1197</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:gardenroute@sanparks.org">gardenroute@sanparks.org</a>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://www.sanparks.org/parks/garden_route" target="_blank">sanparks.org/parks/garden_route</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−33.9922, 22.5954</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-33.9922,22.5954" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Buffalo Bay -->
+      <article class="card park-entry" data-region="garden-route" data-name="Buffalo Bay Caravan Park" data-town="Knysna" data-tags="buffalo bay knysna goukamma marine reserve ocean peninsula dolphins surfing fishing">
+        <div class="card-map-strip garden"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Garden Route</span>
+          <h3 class="card-name">Buffalo Bay Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Walker Road, Buffels Bay, Goukamma Marine Reserve — N2 between George &amp; Knysna
+          </p>
+          <p class="card-desc">Impossibly positioned on a grassy peninsula inside the Goukamma Marine Reserve, almost completely surrounded by waves. Wake up to dolphins surfing in front of your caravan. 85 sites on grass and paving, many sea-facing. Exceptional fishing, surfing and sunrise views. One of the most photographed campsites in South Africa.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Marine Reserve</span>
+            <span class="card-tag">Dolphins</span>
+            <span class="card-tag">Ocean Views</span>
+            <span class="card-tag">Rock Pools</span>
+            <span class="card-tag">Surfing</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27825559405">+27 82 555 9405</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="http://www.buffalobay.co.za/" target="_blank">www.buffalobay.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.0891, 22.9761</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.0891,22.9761" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Lake Brenton / Monks / Woodbourne -->
+      <article class="card park-entry" data-region="garden-route" data-name="Lake Brenton Holiday Resort" data-town="Knysna" data-tags="knysna lagoon lake brenton boating fishing shaded electrified garden route">
+        <div class="card-map-strip garden"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-unknown">🐾 Confirm With Park</span>
+          <span class="card-region-tag">Garden Route</span>
+          <h3 class="card-name">Lake Brenton Holiday Resort</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Knysna Lagoon, Brenton-on-Lake, Garden Route
+          </p>
+          <p class="card-desc">Situated on the Knysna Lagoon in the heart of the Garden Route. 100 shady, fully electrified sites with excellent laundry facilities, boating and fishing. Free laundromat. Perfect base for Knysna Heads, oyster festival, elephant park and the world-famous Garden Route.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Knysna Lagoon</span>
+            <span class="card-tag">100 Sites</span>
+            <span class="card-tag">Boating</span>
+            <span class="card-tag">Shaded</span>
+            <span class="card-tag">Fishing</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27443810060">+27 44 381 0060</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Brenton-on-Lake, off N2 Knysna</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.0655, 23.0135</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.0655,23.0135" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Monks Knysna -->
+      <article class="card park-entry" data-region="garden-route" data-name="Monks Caravan Park" data-town="Knysna" data-tags="knysna lagoon knysna town walkable 22 sites electricity small intimate">
+        <div class="card-map-strip garden"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Garden Route</span>
+          <h3 class="card-name">Monks Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Main Road, Knysna — walking distance to town
+          </p>
+          <p class="card-desc">A small, intimate park of 22 electrified sites on the Knysna Lagoon, within easy walking distance of Knysna town, the waterfront and restaurants. Clean ablutions and a laid-back atmosphere. Ideal for those wanting to be in the heart of Knysna without the crowds of larger resorts.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Knysna Lagoon</span>
+            <span class="card-tag">Walk to Town</span>
+            <span class="card-tag">22 Sites</span>
+            <span class="card-tag">Intimate</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27443822609">+27 44 382 2609</a> &nbsp;|&nbsp; <a href="tel:+27845127471">+27 84 512 7471</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:info@monkscaravan.co.za">info@monkscaravan.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.0432, 23.0459</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.0432,23.0459" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Keurbooms -->
+      <article class="card park-entry" data-region="garden-route" data-name="Keurbooms Lagoon Caravan Park" data-town="Plettenberg Bay" data-tags="plettenberg bay keurbooms lagoon river 270 sites garden route plett surfing diving boating">
+        <div class="card-map-strip garden"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-no">🐾 No Pets Allowed</span>
+          <span class="card-region-tag">Garden Route</span>
+          <h3 class="card-name">Keurbooms Lagoon Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            N2, Plettenberg Bay — beside Keurbooms River
+          </p>
+          <p class="card-desc">One of South Africa's great caravan parks — 270 grassed sites on the Keurbooms River (32 directly on the water's edge). Set in world-renowned Plettenberg Bay, the park is a 2-minute walk from the lagoon beach. Legendary family destination for surfing, diving, boating, water skiing and sundowners on the water. Advance booking essential in season.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">270 Sites</span>
+            <span class="card-tag">Waterfront Sites</span>
+            <span class="card-tag">Surfing</span>
+            <span class="card-tag">Boating</span>
+            <span class="card-tag">Scuba Diving</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27445332567">+27 44 533 2567</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:info@keurboomslagoon.co.za">info@keurboomslagoon.co.za</a>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://www.keurboomslagoon.co.za/" target="_blank">www.keurboomslagoon.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.0380, 23.3786</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.0380,23.3786" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Jongensfontein -->
+      <article class="card park-entry" data-region="garden-route" data-name="Jongensfontein Caravan Park" data-town="Jongensfontein" data-tags="jongensfontein hessequa still bay mossel bay coastal garden route flagship">
+        <div class="card-map-strip garden"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Garden Route</span>
+          <h3 class="card-name">Jongensfontein Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Jongensfontein, Hessequa Municipality — Garden Route
+          </p>
+          <p class="card-desc">The flagship campsite of the Hessequa Municipality, consistently praised for its excellent facilities, management and coastal setting. Located in the small, unspoilt village of Jongensfontein between Still Bay and Mossel Bay, offering excellent fishing, swimming and peaceful dune landscapes.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Flagship Resort</span>
+            <span class="card-tag">Coastal</span>
+            <span class="card-tag">Fishing</span>
+            <span class="card-tag">Swimming</span>
+            <span class="card-tag">Quiet Village</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27287550034">+27 28 755 0034</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Jongensfontein village, off R322</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.3050, 21.5820</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.3050,21.5820" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CEDERBERG
+  ═══════════════════════════════════════ -->
+  <section class="region-section region-block" id="sec-cederberg" data-region="cederberg">
+    <div class="region-header">
+      <div class="region-dot"></div>
+      <h2 class="region-title">Cederberg &amp; West Coast Mountains</h2>
+      <span class="region-count">2 parks</span>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Kleinfontein -->
+      <article class="card park-entry" data-region="cederberg" data-name="Kleinfontein" data-town="Cederberg" data-tags="cederberg mountains wilderness remote rock art hiking stargazing 4x4">
+        <div class="card-map-strip karoo"></div>
+        <div class="card-body">
+          <span class="card-region-tag">Cederberg</span>
+          <h3 class="card-name">Kleinfontein Campsite</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Northern Cederberg Mountains, at the foot of Kleinfontein
+          </p>
+          <p class="card-desc">A scenic mountain campsite tucked into the northern Cederberg, renowned for its star-gazing (some of the darkest skies in South Africa), ancient rock art, dramatic rock formations and excellent hiking. The Cederberg is a UNESCO Biosphere Reserve rich in fynbos, Bushman paintings and endangered Clanwilliam cedar trees.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Star Gazing</span>
+            <span class="card-tag">Rock Art</span>
+            <span class="card-tag">Hiking</span>
+            <span class="card-tag">Biosphere Reserve</span>
+            <span class="card-tag">Fynbos</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Northern Cederberg — enquire at Cederberg Tourism</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−32.1800, 19.1100</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-32.1800,19.1100" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Kardoesie -->
+      <article class="card park-entry" data-region="cederberg" data-name="Kardoesie" data-town="Piekenierskloof" data-tags="piekenierskloof pass n7 citrusdal cederberg cape town route mountain">
+        <div class="card-map-strip karoo"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Cederberg</span>
+          <h3 class="card-name">Kardoesie</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            N7 at the top of Piekenierskloof Pass, near Citrusdal
+          </p>
+          <p class="card-desc">Perched at the top of the scenic Piekenierskloof Pass on the N7 — a natural gateway between Cape Town and the Cederberg. Kardoesie has been welcoming travellers and caravanners for decades, offering a tranquil mountain setting surrounded by citrus farms and fynbos, with spectacular pass views.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Mountain Pass</span>
+            <span class="card-tag">Citrus Country</span>
+            <span class="card-tag">N7 Route</span>
+            <span class="card-tag">Fynbos</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>N7 at Piekenierskloof Pass — signposted</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−32.4650, 19.0350</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-32.4650,19.0350" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       HARTENBOS / MOSSEL BAY
+  ═══════════════════════════════════════ -->
+  <section class="region-section region-block" id="sec-hartenbos" data-region="hartenbos">
+    <div class="region-header">
+      <div class="region-dot"></div>
+      <h2 class="region-title">Hartenbos &amp; Mossel Bay</h2>
+      <span class="region-count">3 parks</span>
+    </div>
+    <div class="cards-grid">
+
+      <!-- ATKV Hartenbos -->
+      <article class="card park-entry" data-region="hartenbos" data-name="ATKV Hartenbos" data-town="Hartenbos" data-tags="atkv hartenbos beach waterpark pools restaurant mossel bay garden route iconic afrikaans">
+        <div class="card-map-strip garden"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-no">🐾 No Pets Allowed</span>
+          <span class="card-region-tag">Hartenbos / Mossel Bay</span>
+          <h3 class="card-name">ATKV Hartenbos</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            h/v Kaap de Goedehoop &amp; Majubalaan, Hartenbos, 6520 — 11km from Mossel Bay
+          </p>
+          <p class="card-desc">South Africa's most iconic ATKV resort — 579 caravan and camping sites across multiple blocks, right on the beach. Heated pools, waterpark, mini-golf, amphitheatre, restaurants, games arcade and the famous Hartenbos Museum. A December holiday institution for South African families for nearly 90 years. Self-catering units, rondavels and luxury hotel rooms also available.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">579 Sites</span>
+            <span class="card-tag">Beach</span>
+            <span class="card-tag">Waterpark</span>
+            <span class="card-tag">Pools</span>
+            <span class="card-tag">Restaurant</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27446017200">+27 44 601 7200</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:hartenbos@atkv.org.za">hartenbos@atkv.org.za</a>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://www.hartenbos.co.za/" target="_blank">www.hartenbos.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.1286, 22.1169</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.1286,22.1169" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Dibiki -->
+      <article class="card park-entry" data-region="hartenbos" data-name="Dibiki Holiday Resort" data-town="Hartenbos" data-tags="dibiki hartenbos river lagoon family chalets swimming garden route mossel bay quiet">
+        <div class="card-map-strip garden"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Hartenbos / Mossel Bay</span>
+          <h3 class="card-name">Dibiki Holiday Resort</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Near Hartenbos River, off R102, Hartenbos, 6520 — 9km from Mossel Bay
+          </p>
+          <p class="card-desc">Peaceful family resort tucked at the end of a quiet road on the Hartenbos River and lagoon, 1km from Hartenbos Beach. Grassed and paved camping sites, wooden self-catering chalets, swimming pool, lapa, trampoline and children's play area. AA Wall of Fame recipient. Ideal for those wanting proximity to the beach without the crowds of the larger ATKV resort.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">River &amp; Lagoon</span>
+            <span class="card-tag">1km to Beach</span>
+            <span class="card-tag">Chalets</span>
+            <span class="card-tag">AA Rated</span>
+            <span class="card-tag">Quiet</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27446951532">+27 44 695 1532</a> &nbsp;|&nbsp; <a href="tel:+27820760088">+27 82 076 0088</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:info@dibiki.co.za">info@dibiki.co.za</a>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://www.dibiki.co.za/" target="_blank">www.dibiki.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.1153, 22.1170</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.1153,22.1170" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Hartenbos Lagoon Resort -->
+      <article class="card park-entry" data-region="hartenbos" data-name="Hartenbos Lagoon Resort" data-town="Hartenbos" data-tags="dream resorts hartenbos lagoon river pool birds family garden route">
+        <div class="card-map-strip garden"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-unknown">🐾 Confirm With Park</span>
+          <span class="card-region-tag">Hartenbos / Mossel Bay</span>
+          <h3 class="card-name">Hartenbos Lagoon Resort</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Port Natal Road, Hartenbos, 6520
+          </p>
+          <p class="card-desc">Dream Resorts property on the banks of the Hartenbos Lagoon, offering grassed camping sites alongside self-catering chalets. Swimming pool with patio, children's play area including trampoline and jungle gym. Excellent bird watching over the lagoon. Secure parking. 8km from Mossel Bay, 25km from George Airport.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Lagoon Setting</span>
+            <span class="card-tag">Birdwatching</span>
+            <span class="card-tag">Pool</span>
+            <span class="card-tag">Secure</span>
+            <span class="card-tag">Dream Resorts</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27446954414">+27 44 695 4414</a> &nbsp;|&nbsp; <a href="tel:+27446954416">+27 44 695 4416</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:hartenbos@dreamresorts.co.za">hartenbos@dreamresorts.co.za</a>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://dreamresorts.co.za/hotels-resorts/hartenbos-lagoon-resort/" target="_blank">dreamresorts.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.1250, 22.1190</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.1250,22.1190" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SEDGEFIELD
+  ═══════════════════════════════════════ -->
+  <section class="region-section region-block" id="sec-sedgefield" data-region="sedgefield">
+    <div class="region-header">
+      <div class="region-dot"></div>
+      <h2 class="region-title">Sedgefield</h2>
+      <span class="region-count">1 park</span>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Swartvlei -->
+      <article class="card park-entry" data-region="sedgefield" data-name="Swartvlei Caravan Park" data-town="Sedgefield" data-tags="swartvlei sedgefield lake beach paragliding slow town knysna wilderness garden route fenced security">
+        <div class="card-map-strip garden"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Sedgefield</span>
+          <h3 class="card-name">Swartvlei Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Off N2, 5km from Sedgefield — 20km from Knysna, 40km from George
+          </p>
+          <p class="card-desc">Seaside campsite nestled alongside Swartvlei Lake, renowned for its lush canopy trees and tranquil setting. 154 grassed sites (49 electrified), fully fenced with security cameras. Activities include swimming at Swartvlei Beach, paragliding from the Cloud 9 launch site, hiking to Gericke's Point and Sedgefield's famous Slow Food Market. Africa's first designated "Slow Town" — the Garden Route at its most unhurried.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Swartvlei Lake</span>
+            <span class="card-tag">154 Sites</span>
+            <span class="card-tag">Paragliding</span>
+            <span class="card-tag">Slow Town</span>
+            <span class="card-tag">Secure Fenced</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27443432286">+27 44 343 2286</a> &nbsp;|&nbsp; <a href="tel:+27602886436">+27 60 288 6436</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://swartvleicaravanpark.co.za/" target="_blank">swartvleicaravanpark.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.0144, 22.7740</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.0144,22.7740" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       STILL BAY / STILBAAI
+  ═══════════════════════════════════════ -->
+  <section class="region-section region-block" id="sec-stillbay" data-region="stillbay">
+    <div class="region-header">
+      <div class="region-dot"></div>
+      <h2 class="region-title">Still Bay / Stilbaai</h2>
+      <span class="region-count">1 park</span>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Ellensrust -->
+      <article class="card park-entry" data-region="stillbay" data-name="Ellensrust Caravan Park" data-town="Still Bay" data-tags="ellensrust stilbaai still bay blue flag beach goukou river lagoon fishing surfing 338 sites chalets hessequa">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Still Bay / Stilbaai</span>
+          <h3 class="card-name">Ellensrust Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            1 Main Road East, Still Bay East, Stilbaai, 6674
+          </p>
+          <p class="card-desc">One of the Southern Cape's great caravan parks — 338 grassed sites and 21 chalets occupying a magnificent position between the Blue Flag Stilbaai beach and the calm Goukou River lagoon. Two aquatic worlds steps apart: surf in the morning, paddle on the lagoon in the afternoon. Spotless ablutions kept immaculate even in peak season. Superb fishing in both sea and river. Book well ahead for December.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Blue Flag Beach</span>
+            <span class="card-tag">338 Sites</span>
+            <span class="card-tag">Goukou Lagoon</span>
+            <span class="card-tag">Fishing</span>
+            <span class="card-tag">Surfing</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27287137848">+27 28 713 7848</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://www.ellensrustcaravanpark.co.za/" target="_blank">www.ellensrustcaravanpark.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.3755, 21.4234</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.3755,21.4234" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PATERNOSTER / WEST COAST (ADDITION)
+  ═══════════════════════════════════════ -->
+  <section class="region-section region-block" id="sec-paternoster" data-region="paternoster">
+    <div class="region-header">
+      <div class="region-dot"></div>
+      <h2 class="region-title">Paternoster &amp; Cape Columbine</h2>
+      <span class="region-count">1 park</span>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Tietiesbaai -->
+      <article class="card park-entry" data-region="paternoster" data-name="Tietiesbaai Rest Camp" data-town="Paternoster" data-tags="tietiesbaai paternoster cape columbine nature reserve lighthouse crayfish fishing west coast off grid raw seafront atlantic">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Paternoster / Cape Columbine</span>
+          <h3 class="card-name">Tietiesbaai Rest Camp</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Cape Columbine Nature Reserve, 6km from Paternoster — 155km from Cape Town
+          </p>
+          <p class="card-desc">60 raw seafront campsites on the wild Atlantic inside the Cape Columbine Nature Reserve — the furthest westerly point in the Western Cape. No electricity (solar only for ablutions). The last manually operated lighthouse in South Africa stands on Castle Rock above. Legendary for crayfish diving, perlemoen, rock fishing and Namaqualand spring flowers. In-season bookings via Saldanha Bay Municipality; off-season first come, first served. Pure, untouched West Coast.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Nature Reserve</span>
+            <span class="card-tag">Seafront Sites</span>
+            <span class="card-tag">Crayfish Diving</span>
+            <span class="card-tag">No Electricity</span>
+            <span class="card-tag">Lighthouse</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27227522718">+27 22 752 2718</a> &nbsp;|&nbsp; <a href="tel:+27839922237">+27 83 992 2237</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://sbm.gov.za/cape-columbine-nature-reserve-tietiesbaai/" target="_blank">sbm.gov.za — Cape Columbine</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−32.8175, 17.8553</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-32.8175,17.8553" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       OVERBERG EXTENDED
+  ═══════════════════════════════════════ -->
+  <section class="region-section region-block" id="sec-overberg-ext" data-region="overberg-ext">
+    <div class="region-header">
+      <div class="region-dot"></div>
+      <h2 class="region-title">Overberg — Hermanus, Gansbaai &amp; Kleinmond</h2>
+      <span class="region-count">5 parks</span>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Uilenkraalsmond -->
+      <article class="card park-entry" data-region="overberg-ext" data-name="Uilenkraalsmond Resort" data-town="Gansbaai" data-tags="uilenkraalsmond gansbaai shark diving whale watching lagoon estuary overberg family chalets camping 110 sites">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-yes">🐾 Pets Welcome</span>
+          <span class="card-region-tag">Overberg — Gansbaai</span>
+          <h3 class="card-name">Uilenkraalsmond Resort</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Via Franskraal, 7km from Gansbaai — 175km from Cape Town
+          </p>
+          <p class="card-desc">One of the oldest and most loved family resorts in the Overberg, where the Uilenkraals River estuary and lagoon meet the Atlantic. 110 camping/caravan sites plus 40 chalets (including sea-view units). Coffee shop, super slide, convenience store, mini-golf and holiday programme for kids. Base for world-famous shark cage diving, whale watching and the Dyer Island penguin colony at Gansbaai.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Lagoon &amp; Beach</span>
+            <span class="card-tag">Shark Diving</span>
+            <span class="card-tag">Whale Watching</span>
+            <span class="card-tag">110 Sites</span>
+            <span class="card-tag">Chalets</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27280500894">+27 28 050 0894</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"></path></svg>
+              <a href="https://www.uilenkraalsmondresort.co.za/" target="_blank">uilenkraalsmondresort.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.6003, 19.4090</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.6003,19.4090" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Gansbaai Caravan Park -->
+      <article class="card park-entry" data-region="overberg-ext" data-name="Gansbaai Caravan Park" data-town="Gansbaai" data-tags="gansbaai shark cage diving whale watching overberg overstrand municipal 116 sites dyer island">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-unknown">🐾 Confirm With Park</span>
+          <span class="card-region-tag">Overberg — Gansbaai</span>
+          <h3 class="card-name">Gansbaai Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Franken Street, Gansbaai
+          </p>
+          <p class="card-desc">Municipal caravan park in the heart of Gansbaai, the world capital of great white shark cage diving. 116 sites with electricity, ablution facilities, hikes, walks and fishing. Perfectly positioned to access whale watching (June–December), the Dyer Island penguin and seal colony, and the famous "Shark Alley" boat trips — all departing from nearby Kleinbaai harbour.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">116 Sites</span>
+            <span class="card-tag">Shark Diving</span>
+            <span class="card-tag">Whale Watching</span>
+            <span class="card-tag">Penguins Nearby</span>
+            <span class="card-tag">Municipal</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27283840872">+27 28 384 0872</a> &nbsp;|&nbsp; <a href="tel:+27731434751">+27 73 143 4751</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:enquiries@overstrand.gov.za">enquiries@overstrand.gov.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.5840, 19.3500</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.5840,19.3500" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Onrus Caravan Park -->
+      <article class="card park-entry" data-region="overberg-ext" data-name="Onrus Caravan Park" data-town="Onrusrivier" data-tags="onrus hermanus whale watching overberg river beach municipal overstrand">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-unknown">🐾 Confirm With Park</span>
+          <span class="card-region-tag">Overberg — Hermanus</span>
+          <h3 class="card-name">Onrus Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            De Villiers Street, Onrusrivier — just outside Hermanus
+          </p>
+          <p class="card-desc">Beloved municipal caravan park in the charming village of Onrus, metres from the Onrus River mouth and beach. A firm favourite with repeat visitors who come year after year for the relaxed atmosphere and proximity to Hermanus — the world's best land-based whale watching destination. Quiet Overberg village character with easy access to Hermanus restaurants and the Walker Bay whale route.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">River Mouth</span>
+            <span class="card-tag">Whale Watching</span>
+            <span class="card-tag">Hermanus Area</span>
+            <span class="card-tag">Municipal</span>
+            <span class="card-tag">Repeat Favourite</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27283161704">+27 28 316 1704</a> &nbsp;|&nbsp; <a href="tel:+27283161210">+27 28 316 1210</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:enquiries@overstrand.gov.za">enquiries@overstrand.gov.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.4108, 19.1758</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.4108,19.1758" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Kleinmond Caravan Park -->
+      <article class="card park-entry" data-region="overberg-ext" data-name="Kleinmond Caravan Park" data-town="Kleinmond" data-tags="kleinmond biosphere kogelberg lagoon mountain birdwatching overberg overstrand betty&#39;s bay hermanus">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-unknown">🐾 Confirm With Park</span>
+          <span class="card-region-tag">Overberg — Kleinmond</span>
+          <h3 class="card-name">Kleinmond Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            39 Geelhout Avenue (Middelrivier Weg), Kleinmond, 7195 — 90km from Cape Town
+          </p>
+          <p class="card-desc">Municipal campsite inside the UNESCO Kogelberg Biosphere Reserve between Betty's Bay and Hermanus. A small mountain river runs through the park all the way to the lagoon and beach. Shaded grassed sites with stunning mountain views and a footpath to the 3.5km sandy beach. Heaven for birdwatchers — the Kogelberg is one of the most biodiverse fynbos areas on earth.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">UNESCO Biosphere</span>
+            <span class="card-tag">Mountain River</span>
+            <span class="card-tag">Birdwatching</span>
+            <span class="card-tag">Beach Access</span>
+            <span class="card-tag">Municipal</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27793121614">+27 79 312 1614</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:bookings@kleinmondcaravanpark.co.za">bookings@kleinmondcaravanpark.co.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.3341, 19.0405</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.3341,19.0405" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+      <!-- Palmiet Caravan Park -->
+      <article class="card park-entry" data-region="overberg-ext" data-name="Palmiet Caravan Park" data-town="Kleinmond" data-tags="palmiet river kleinmond kogelberg biosphere fynbos birdwatching overberg overstrand river swimming">
+        <div class="card-map-strip coast"></div>
+        <div class="card-body">
+          <span class="pet-badge pet-unknown">🐾 Confirm With Park</span>
+          <span class="card-region-tag">Overberg — Kleinmond</span>
+          <h3 class="card-name">Palmiet Caravan Park</h3>
+          <p class="card-location">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Palmiet Road, Kleinmond area
+          </p>
+          <p class="card-desc">Overstrand municipal park tucked into the pristine Palmiet River Valley — one of the most ecologically intact fynbos river systems in the Western Cape and part of the UNESCO Kogelberg Biosphere Reserve. River swimming, hiking and exceptional birdwatching in a serene, lightly-visited setting. A hidden gem for nature lovers wanting something quieter than the main coast parks.</p>
+          <button class="read-more-btn" onclick="toggleDesc(this)">Read more ▾</button>
+          <div class="card-tags">
+            <span class="card-tag">Palmiet River</span>
+            <span class="card-tag">UNESCO Biosphere</span>
+            <span class="card-tag">River Swimming</span>
+            <span class="card-tag">Fynbos</span>
+            <span class="card-tag">Hidden Gem</span>
+          </div>
+          <div class="card-divider"></div>
+          <div class="card-contacts">
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.22a2 2 0 012-.22h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.84a16 16 0 006.25 6.25l1.22-1.22a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"></path></svg>
+              <span><a href="tel:+27282718458">+27 28 271 8458</a> &nbsp;|&nbsp; <a href="tel:+27825684095">+27 82 568 4095</a></span>
+            </div>
+            <div class="contact-row">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:enquiries@overstrand.gov.za">enquiries@overstrand.gov.za</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="card-gps">−34.3500, 19.0200</span>
+          <a class="card-map-link" href="https://www.google.com/maps?q=-34.3500,19.0200" target="_blank">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            View Map
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="no-results" id="noResults">
+    <h3>No parks found</h3>
+    <p>Try a different search term or clear your filters.</p>
+  </div>
+
+</main>
+
+<footer>
+  <p><strong>Western Cape Caravan Parks Directory</strong></p>
+  <p>The most complete guide to caravan parks &amp; camping sites in the Western Cape, South Africa.</p>
+  <p style="margin-top:16px; font-size:0.78rem;">Data compiled from official sources, park websites and operator contact details. Always confirm availability directly with the park before travelling.</p>
+</footer>
+
+<script>
+  let currentRegion = 'all';
+  let currentSearch = '';
+
+  function filterRegion(region, btn) {
+    currentRegion = region;
+    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+    document.getElementById('regionFilter').value = region;
+    applyFilters();
+  }
+
+  function filterByDropdown() {
+    const region = document.getElementById('regionFilter').value;
+    filterRegion(region, null);
+    // highlight matching nav btn
+    document.querySelectorAll('.nav-btn').forEach(b => {
+      if (b.getAttribute('onclick') && b.getAttribute('onclick').includes("'" + region + "'")) {
+        b.classList.add('active');
+      }
+    });
+  }
+
+  function searchParks() {
+    currentSearch = document.getElementById('searchInput').value.toLowerCase().trim();
+    applyFilters();
+  }
+
+  let petFilterActive = false;
+
+  function activatePetFilter() {
+    // Turn on pet filter
+    petFilterActive = true;
+    // Reset region to all
+    currentRegion = 'all';
+    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('regionFilter').value = 'all';
+    // Style both buttons
+    const navBtn = document.getElementById('petFilterBtn');
+    if (navBtn) navBtn.classList.add('active');
+    document.getElementById('heroPetBtn').classList.add('active-filter');
+    applyFilters();
+    // Scroll past hero to first result
+    document.getElementById('mainNav').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function filterPets(btn) {
+    petFilterActive = !petFilterActive;
+    btn.classList.toggle('active', petFilterActive);
+    const heroBtn = document.getElementById('heroPetBtn');
+    if (heroBtn) heroBtn.classList.toggle('active-filter', petFilterActive);
+    // If turning off, reset hero button style
+    applyFilters();
+  }
+
+  function toggleDesc(btn) {
+    const desc = btn.previousElementSibling;
+    const isExpanded = desc.classList.toggle('expanded');
+    btn.textContent = isExpanded ? 'Show less ▴' : 'Read more ▾';
+  }
+
+  function applyFilters() {
+    const entries = document.querySelectorAll('.park-entry');
+    let visible = 0;
+
+    entries.forEach(entry => {
+      const region = entry.dataset.region;
+      const name = (entry.dataset.name || '').toLowerCase();
+      const town = (entry.dataset.town || '').toLowerCase();
+      const tags = (entry.dataset.tags || '').toLowerCase();
+      const fullText = name + ' ' + town + ' ' + tags;
+
+      const regionMatch = currentRegion === 'all' || region === currentRegion;
+      const searchMatch = !currentSearch || fullText.includes(currentSearch);
+      const petBadge = entry.querySelector('.pet-yes');
+      const petMatch = !petFilterActive || !!petBadge;
+
+      if (regionMatch && searchMatch && petMatch) {
+        entry.classList.remove('hidden');
+        visible++;
+      } else {
+        entry.classList.add('hidden');
+      }
+    });
+
+    // Show/hide region sections
+    document.querySelectorAll('.region-block').forEach(block => {
+      const hasVisible = block.querySelectorAll('.park-entry:not(.hidden)').length > 0;
+      block.classList.toggle('hidden', !hasVisible);
+    });
+
+    document.getElementById('countNum').textContent = visible;
+    const noRes = document.getElementById('noResults');
+    noRes.classList.toggle('visible', visible === 0);
+  }
+</script>
+
+
+
+</body></html>
