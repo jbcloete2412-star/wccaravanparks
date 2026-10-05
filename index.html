@@ -3,6 +3,7 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4901428323700954" crossorigin="anonymous"></script>
 <title>Western Cape Caravan Parks — The Complete Guide</title>
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link href="./index_files/css2" rel="stylesheet">
@@ -436,8 +437,9 @@
     border-top: 1px solid var(--border);
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 12px;
+    gap: 8px;
   }
   .card-gps {
     font-family: monospace;
@@ -501,6 +503,136 @@
     .hero-stats { gap: 28px; }
     .cards-grid { grid-template-columns: 1fr; }
     .nav-inner { padding: 0 16px; }
+  }
+
+  /* ── NEARBY STORES BUTTON ── */
+  .card-stores-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #e65100;
+    text-decoration: none;
+    padding: 5px 12px;
+    border: 1px solid #ffcc80;
+    border-radius: 20px;
+    white-space: nowrap;
+    background: #fff3e0;
+    transition: background 0.15s;
+    margin-top: 2px;
+  }
+  .card-stores-link:hover { background: #ffe0b2; color: #bf360c; }
+
+  /* ── CAMPING STORES SECTION ── */
+  .stores-section {
+    background: linear-gradient(135deg, #1b3a2e 0%, #0d3b7a 100%);
+    padding: 60px 0;
+    display: none;
+  }
+  .stores-section.visible { display: block; }
+  .stores-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .stores-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .stores-sub {
+    color: rgba(255,255,255,0.75);
+    font-size: 0.95rem;
+    margin-bottom: 36px;
+  }
+  .stores-chains {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 44px;
+  }
+  .chain-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 14px;
+    padding: 22px 24px;
+    transition: background 0.2s;
+  }
+  .chain-card:hover { background: rgba(255,255,255,0.13); }
+  .chain-logo-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .chain-emoji {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  .chain-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff176;
+  }
+  .chain-type {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 8px;
+  }
+  .chain-locations {
+    font-size: 0.83rem;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+  .chain-locations strong { color: #80cbc4; }
+  .chain-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .chain-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+  .chain-btn:hover { opacity: 0.85; }
+  .chain-btn-map {
+    background: #fff176;
+    color: #1a237e;
+  }
+  .chain-btn-web {
+    background: rgba(255,255,255,0.15);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.25);
+  }
+  .stores-tip {
+    background: rgba(255,235,59,0.12);
+    border: 1px solid rgba(255,235,59,0.3);
+    border-radius: 12px;
+    padding: 18px 24px;
+    color: rgba(255,255,255,0.85);
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+  .stores-tip strong { color: #fff176; }
+  @media (max-width: 640px) {
+    .stores-inner { padding: 0 24px; }
+    .stores-chains { grid-template-columns: 1fr; }
+    .stores-title { font-size: 1.5rem; }
   }
 
   /* ── HERO PET BUTTON ── */
@@ -610,6 +742,7 @@
     <button class="nav-btn" onclick="filterRegion(&#39;hartenbos&#39;, this)">Hartenbos</button>
     <button class="nav-btn" onclick="filterRegion(&#39;cederberg&#39;, this)">Cederberg</button>
     <button class="nav-btn nav-btn-pet" onclick="filterPets(this)" id="petFilterBtn">🐾 Pets Welcome</button>
+    <button class="nav-btn" onclick="toggleStoresSection(this)" id="storesNavBtn" style="color:#ffcc80;border-left:1px solid rgba(255,255,255,0.15);margin-left:4px;padding-left:20px;">🏪 Camping Stores</button>
   </div>
 </nav>
 
@@ -2362,6 +2495,141 @@
 
 </main>
 
+<!-- CAMPING STORES SECTION -->
+<section class="stores-section" id="storesSection">
+  <div class="stores-inner">
+    <h2 class="stores-title">🏪 Camping Supply Stores</h2>
+    <p class="stores-sub">Major outdoor &amp; camping retailers across the Western Cape — click any card to find the nearest branch on Google Maps.</p>
+
+    <div class="stores-chains">
+
+      <!-- Outdoor Warehouse -->
+      <div class="chain-card">
+        <div class="chain-logo-row">
+          <span class="chain-emoji">🏕️</span>
+          <div>
+            <div class="chain-name">Outdoor Warehouse</div>
+            <div class="chain-type">Full-Range Outdoor Megastore</div>
+          </div>
+        </div>
+        <p class="chain-locations">
+          <strong>Cape Town:</strong> Canal Walk, Tokai, Paarl, Brackenfell<br>
+          <strong>Garden Route:</strong> George (Hibernia St)<br>
+          <strong>Karoo:</strong> Beaufort West (limited)
+        </p>
+        <div class="chain-actions">
+          <a class="chain-btn chain-btn-map" href="https://www.google.com/maps/search/Outdoor+Warehouse/@-33.9249,18.4241,10z" target="_blank">📍 Find on Map</a>
+          <a class="chain-btn chain-btn-web" href="https://www.outdoorwarehouse.co.za" target="_blank">Website</a>
+        </div>
+      </div>
+
+      <!-- Cape Union Mart -->
+      <div class="chain-card">
+        <div class="chain-logo-row">
+          <span class="chain-emoji">🎒</span>
+          <div>
+            <div class="chain-name">Cape Union Mart</div>
+            <div class="chain-type">Outdoor Clothing &amp; Gear</div>
+          </div>
+        </div>
+        <p class="chain-locations">
+          <strong>Cape Town:</strong> V&amp;A Waterfront, Cavendish, Tyger Valley, Garden Route Mall<br>
+          <strong>Winelands:</strong> Stellenbosch, Paarl<br>
+          <strong>Garden Route:</strong> George, Knysna, Mossel Bay
+        </p>
+        <div class="chain-actions">
+          <a class="chain-btn chain-btn-map" href="https://www.google.com/maps/search/Cape+Union+Mart/@-33.9249,18.4241,10z" target="_blank">📍 Find on Map</a>
+          <a class="chain-btn chain-btn-web" href="https://www.capeunionmart.co.za" target="_blank">Website</a>
+        </div>
+      </div>
+
+      <!-- Trappers Trading -->
+      <div class="chain-card">
+        <div class="chain-logo-row">
+          <span class="chain-emoji">⛺</span>
+          <div>
+            <div class="chain-name">Trappers Trading Co.</div>
+            <div class="chain-type">Camping &amp; Hunting Supplies</div>
+          </div>
+        </div>
+        <p class="chain-locations">
+          <strong>Cape Town:</strong> Bellville (Main Road), N1 City<br>
+          <strong>Winelands:</strong> Paarl (Lady Grey St)<br>
+          Wide range: tents, gas, braai, survival gear, 4x4 accessories
+        </p>
+        <div class="chain-actions">
+          <a class="chain-btn chain-btn-map" href="https://www.google.com/maps/search/Trappers+Trading+Co/@-33.9249,18.4241,10z" target="_blank">📍 Find on Map</a>
+          <a class="chain-btn chain-btn-web" href="https://www.trappers.co.za" target="_blank">Website</a>
+        </div>
+      </div>
+
+      <!-- Safari Centre -->
+      <div class="chain-card">
+        <div class="chain-logo-row">
+          <span class="chain-emoji">🔭</span>
+          <div>
+            <div class="chain-name">Safari Centre</div>
+            <div class="chain-type">4x4, Camping &amp; Off-Road</div>
+          </div>
+        </div>
+        <p class="chain-locations">
+          <strong>Cape Town:</strong> Paarden Eiland (Ossian Rd) — flagship store<br>
+          Specialists in roof tents, awnings, gas cookers, water tanks, solar &amp; 4x4 recovery gear
+        </p>
+        <div class="chain-actions">
+          <a class="chain-btn chain-btn-map" href="https://www.google.com/maps/search/Safari+Centre+Cape+Town/@-33.9249,18.4241,10z" target="_blank">📍 Find on Map</a>
+          <a class="chain-btn chain-btn-web" href="https://www.safaricentre.co.za" target="_blank">Website</a>
+        </div>
+      </div>
+
+      <!-- Camping World -->
+      <div class="chain-card">
+        <div class="chain-logo-row">
+          <span class="chain-emoji">🌲</span>
+          <div>
+            <div class="chain-name">Camping World</div>
+            <div class="chain-type">Budget Camping Gear</div>
+          </div>
+        </div>
+        <p class="chain-locations">
+          <strong>Cape Town:</strong> Brackenfell, Strand, Tokai<br>
+          <strong>Garden Route:</strong> George, Knysna<br>
+          Good value tents, sleeping bags, braai &amp; gas — ideal before you leave
+        </p>
+        <div class="chain-actions">
+          <a class="chain-btn chain-btn-map" href="https://www.google.com/maps/search/Camping+World+South+Africa/@-33.9249,18.4241,10z" target="_blank">📍 Find on Map</a>
+          <a class="chain-btn chain-btn-web" href="https://www.campingworld.co.za" target="_blank">Website</a>
+        </div>
+      </div>
+
+      <!-- Bushtec -->
+      <div class="chain-card">
+        <div class="chain-logo-row">
+          <span class="chain-emoji">🚐</span>
+          <div>
+            <div class="chain-name">Bushtec / Boplaas</div>
+            <div class="chain-type">Caravans &amp; Accessories</div>
+          </div>
+        </div>
+        <p class="chain-locations">
+          <strong>Cape Town:</strong> Boplaas Caravans — Paarden Eiland<br>
+          <strong>Winelands:</strong> Various dealerships in Paarl<br>
+          Caravan spares, awnings, gas regulators, hitches &amp; accessories
+        </p>
+        <div class="chain-actions">
+          <a class="chain-btn chain-btn-map" href="https://www.google.com/maps/search/caravan+accessories+store+Cape+Town/@-33.9249,18.4241,10z" target="_blank">📍 Find on Map</a>
+          <a class="chain-btn chain-btn-web" href="https://www.bushtec.co.za" target="_blank">Bushtec Website</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="stores-tip">
+      <strong>💡 Pro tip:</strong> Stock up on gas, ice, firewood and braai essentials <em>before</em> leaving the last big town — many rural parks (Elands Bay, Cederberg, Quoin Point) are 30–60 km from the nearest store. Outdoor Warehouse and Trappers both stock long-life gas canisters. Most Garden Route parks have Pick n Pay or SPAR within 5 km. Use the <strong>"Nearby Stores"</strong> button on each park card to find the closest option on the day of travel.
+    </div>
+  </div>
+</section>
+
 <footer>
   <p><strong>Western Cape Caravan Parks Directory</strong></p>
   <p>The most complete guide to caravan parks &amp; camping sites in the Western Cape, South Africa.</p>
@@ -2423,6 +2691,44 @@
     applyFilters();
   }
 
+  // ── CAMPING STORES SECTION TOGGLE ──
+  function toggleStoresSection(btn) {
+    const section = document.getElementById('storesSection');
+    const isVisible = section.classList.toggle('visible');
+    btn.style.color = isVisible ? '#fff176' : '#ffcc80';
+    btn.style.borderBottomColor = isVisible ? '#fff176' : 'transparent';
+    if (isVisible) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  // ── INJECT "NEARBY STORES" BUTTON INTO EACH CARD FOOTER ──
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.card-footer').forEach(function(footer) {
+      const gpsSpan = footer.querySelector('.card-gps');
+      if (!gpsSpan) return;
+      const gpsText = gpsSpan.textContent.trim();
+      // Parse coords like "−34.1330, 18.3367" (note: minus sign may be unicode minus)
+      const cleaned = gpsText.replace(/−/g, '-').replace(/\s/g, '');
+      const parts = cleaned.split(',');
+      if (parts.length !== 2) return;
+      const lat = parseFloat(parts[0]);
+      const lng = parseFloat(parts[1]);
+      if (isNaN(lat) || isNaN(lng)) return;
+      const zoom = 12;
+      const url = `https://www.google.com/maps/search/camping+outdoor+store/@${lat},${lng},${zoom}z`;
+      const btn = document.createElement('a');
+      btn.className = 'card-stores-link';
+      btn.href = url;
+      btn.target = '_blank';
+      btn.rel = 'noopener';
+      btn.innerHTML = '🏪 Nearby Stores';
+      btn.title = 'Find camping supply stores near this park on Google Maps';
+      // Insert after the map link
+      footer.appendChild(btn);
+    });
+  });
+
   function toggleDesc(btn) {
     const desc = btn.previousElementSibling;
     const isExpanded = desc.classList.toggle('expanded');
@@ -2465,6 +2771,94 @@
   }
 </script>
 
+  <script>
+    if (typeof document !== "undefined" && document.modelContext) {
+      const ac = new AbortController();
+      const opts = { signal: ac.signal };
 
+      document.modelContext.registerTool({
+        name: "search-parks",
+        title: "Search Caravan Parks",
+        description: "Search Western Cape caravan parks by region, keyword, or tag. Returns matching parks with names, towns, and features.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            region: {
+              type: "string",
+              enum: ["all", "cape-peninsula", "west-coast", "winelands", "breede", "overberg", "karoo", "garden-route", "cederberg", "hartenbos", "sedgefield", "stillbay", "paternoster", "overberg-ext"],
+              description: "Filter by region (default: all)"
+            },
+            keyword: {
+              type: "string",
+              description: "Search keyword matched against park name, town, and tags"
+            },
+            pets: {
+              type: "boolean",
+              description: "If true, return only pet-friendly parks"
+            }
+          }
+        },
+        annotations: { readOnlyHint: true },
+        execute: async ({ region = "all", keyword = "", pets = false } = {}) => {
+          const entries = Array.from(document.querySelectorAll(".park-entry"));
+          const parks = entries
+            .filter(e => {
+              const fullText = ((e.dataset.name || "") + " " + (e.dataset.town || "") + " " + (e.dataset.tags || "")).toLowerCase();
+              const regionMatch = region === "all" || e.dataset.region === region;
+              const keywordMatch = !keyword || fullText.includes(keyword.toLowerCase());
+              const petMatch = !pets || !!e.querySelector(".pet-yes");
+              return regionMatch && keywordMatch && petMatch;
+            })
+            .map(e => ({
+              name: e.dataset.name,
+              town: e.dataset.town,
+              region: e.dataset.region,
+              tags: (e.dataset.tags || "").split(" ").filter(Boolean),
+              petFriendly: !!e.querySelector(".pet-yes")
+            }));
+          return { count: parks.length, parks };
+        }
+      }, opts);
+
+      document.modelContext.registerTool({
+        name: "list-regions",
+        title: "List Regions",
+        description: "List all geographic regions in the Western Cape caravan park directory with their park counts",
+        inputSchema: { type: "object", properties: {} },
+        annotations: { readOnlyHint: true },
+        execute: async () => {
+          const regions = Array.from(document.querySelectorAll(".region-block")).map(block => ({
+            id: block.dataset.region,
+            name: block.querySelector(".region-title")?.textContent?.trim() || "",
+            count: parseInt(block.querySelector(".region-count")?.textContent || "0", 10)
+          }));
+          const total = regions.reduce((sum, r) => sum + r.count, 0);
+          return { regions, total };
+        }
+      }, opts);
+
+      document.modelContext.registerTool({
+        name: "get-site-info",
+        title: "Get Site Info",
+        description: "Return general information about the southafricacamp.com directory — total parks, regions covered, and agent resource URLs",
+        inputSchema: { type: "object", properties: {} },
+        annotations: { readOnlyHint: true },
+        execute: async () => {
+          return {
+            name: "Western Cape Caravan Parks — The Complete Guide",
+            url: "https://southafricacamp.com",
+            totalParks: document.querySelectorAll(".park-entry").length,
+            totalRegions: document.querySelectorAll(".region-block").length,
+            agentResources: {
+              skillsIndex: "https://southafricacamp.com/.well-known/agent-skills/index.json",
+              mcpServerCard: "https://southafricacamp.com/.well-known/mcp/server-card.json",
+              apiCatalog: "https://southafricacamp.com/.well-known/api-catalog",
+              markdownHome: "https://southafricacamp.com/ (Accept: text/markdown)"
+            }
+          };
+        }
+      }, opts);
+    }
+  </script>
 
 </body></html>
