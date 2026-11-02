@@ -1,0 +1,12 @@
+{
+  "serverInfo": {
+    "name": "South Africa Camp Assistant",
+    "version": "1.0.0",
+    "description": "Western Cape Caravan Parks directory — search and browse 37 parks across 13 regions"
+  },
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "/mcp"
+  },
+  "capabilities": []
+}

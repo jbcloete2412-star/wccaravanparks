@@ -1,0 +1,55 @@
+# Agent discovery headers (RFC 8288)
+[[headers]]
+  for = "/"
+  [headers.values]
+    Link = '''</.well-known/api-catalog>; rel="api-catalog", </.well-known/agent-skills/index.json>; rel="describedby", </.well-known/mcp/server-card.json>; rel="describedby"'''
+    Vary = "Accept"
+
+# API Catalog — RFC 9727
+[[headers]]
+  for = "/.well-known/api-catalog"
+  [headers.values]
+    Content-Type = "application/linkset+json"
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=86400"
+
+# Agent skills discovery
+[[headers]]
+  for = "/.well-known/agent-skills/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=86400"
+
+# MCP Server Card
+[[headers]]
+  for = "/.well-known/mcp/*"
+  [headers.values]
+    Content-Type = "application/json"
+    Access-Control-Allow-Origin = "*"
+
+# OAuth Protected Resource Metadata — RFC 9728
+[[headers]]
+  for = "/.well-known/oauth-protected-resource"
+  [headers.values]
+    Content-Type = "application/json"
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=3600"
+
+# Auth.md agent registration document
+[[headers]]
+  for = "/auth.md"
+  [headers.values]
+    Content-Type = "text/markdown; charset=utf-8"
+    Access-Control-Allow-Origin = "*"
+
+# Markdown content type for agent negotiation
+[[headers]]
+  for = "/*.md"
+  [headers.values]
+    Content-Type = "text/markdown; charset=utf-8"
+    Access-Control-Allow-Origin = "*"
+
+# Edge function: serve index.md when Accept: text/markdown
+[[edge_functions]]
+  path = "/"
+  function = "markdown"

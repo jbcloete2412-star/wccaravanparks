@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "search-parks",
+      "type": "skill-md",
+      "description": "Search Western Cape caravan parks by region, keyword, or tag",
+      "url": "https://southafricacamp.com/.well-known/agent-skills/search-parks/SKILL.md",
+      "digest": "sha256:e7acb3a4d9e8c5f0337ac052468d7a02ae510d872190fbf3a99ebfe55d72d38f"
+    },
+    {
+      "name": "list-regions",
+      "type": "skill-md",
+      "description": "List all geographic regions in the Western Cape caravan park directory with park counts",
+      "url": "https://southafricacamp.com/.well-known/agent-skills/list-regions/SKILL.md",
+      "digest": "sha256:a2a3a7cf6871410a2e077b84e394f778b5ba9a282e3243b3ac29c16d9b8c2b10"
+    }
+  ]
+}

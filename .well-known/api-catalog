@@ -1,0 +1,24 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://southafricacamp.com",
+      "service-doc": [
+        {
+          "href": "https://southafricacamp.com/",
+          "type": "text/html",
+          "title": "Western Cape Caravan Parks — The Complete Guide"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://southafricacamp.com/.well-known/mcp/server-card.json",
+          "type": "application/json"
+        },
+        {
+          "href": "https://southafricacamp.com/.well-known/agent-skills/index.json",
+          "type": "application/json"
+        }
+      ]
+    }
+  ]
+}
